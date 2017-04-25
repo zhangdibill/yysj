@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    >
+
+    <RelativeLayout
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="finishActivity"
+        android:paddingBottom="5dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_gravity="left"
+            android:background="@drawable/title_niv_back"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/c_161615"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/img_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/spinner"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_rightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/system_bar"
+            android:textSize="13sp"
+            />
+    </FrameLayout>
+
+
+</android.support.v7.widget.Toolbar>
